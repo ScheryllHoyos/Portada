@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal de la portada */
+.magazine-cover {
+    width: 400px;
+    height: 600px;
+    position: relative;
+    border: 28px solid #f7cc21;
+    background: url('images/fondo.jpg') no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* cabecera */
+.magazine-cover__header {
+    position: relative;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* fecha */
+.magazine-cover__date {
+    font-size: 8px;
+    margin-top: 5px;
+}
+
+/* titulo principal */
+.magazine-cover__title {
+    margin: 0;
+    font-size: 40px;
+    margin-top: 5px;
+    margin-bottom: 10px; 
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: white;
+}
+
+/* subtítulo */
+.magazine-cover__headline {
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: bold;
+    color: #ecc528;
+}
+
+.magazine-cover__headline-number {
+    font-size: 24px;
+}
+
+.magazine-cover__overlay {
+    position: absolute;
+    bottom: 20px; 
+    left: 20px; 
+    right: auto; 
+    color: white;
+    display: flex;
+    font-size: 12px;
+}
+
+/*Oraciones verticales */
+.magazine-cover__articles {
+    position: absolute;
+    top: calc(100% - 350px); 
+    right: 12px; 
+    text-align: right; 
+    font-size: 10px; 
+    line-height: 1; 
+    color: white; 
+    font-family: "Fira Sans", sans-serif;
+}
+
+/* stilo para cada línea */
+.magazine-cover__article {
+    display: block;
+    margin-bottom: 2px; 
+}
+
+/*líneas */
+.divider {
+    border-top: 2px solid #ffcc00; 
+    margin: 9px 0;
+    width: 28%;
+    margin-left: auto; 
+}
+
+/* Contenedor de subtítulos con Grid */
+.magazine-cover__subtitle-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px; 
+    text-align: left;
+    position: relative;
+    margin-top: 20px; 
+}
+
+/* Subtítulos */
+.magazine-cover__subtitle {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* ajustes para cada línea */
+.magazine-cover__subtitle--line {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 350; 
+    font-size: 45px; 
+}
+
+.magazine-cover__subtitle--line1 {
+    margin-bottom: -15px; 
+}
+
+.magazine-cover__subtitle--line2 {
+    margin-bottom: -20px;
+}
+
+.magazine-cover__subtitle--line3 {
+    left: 15px; 
+}
+
+/*  frase inferior */
+.magazine-cover__content-inline {
+    display: flex;
+    align-items: center; 
+}
+
+/* Estilo de la frase */
+.magazine-cover__description {
+    font-size: 10px;
+    color: white;
+    margin-left: 10px; 
+}
